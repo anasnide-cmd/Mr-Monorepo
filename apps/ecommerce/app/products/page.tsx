@@ -1,3 +1,5 @@
+import { Button } from '@mr-monorepo/ui'
+
 export default function Products() {
   const products = [
     { id: 1, name: 'Product 1', price: 10 },
@@ -11,7 +13,7 @@ export default function Products() {
         {products.map(product => (
           <li key={product.id}>
             {product.name} - ${product.price}
-            <button>Add to Cart</button>
+            <Button>Add to Cart</Button>
           </li>
         ))}
       </ul>
