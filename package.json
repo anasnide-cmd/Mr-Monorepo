@@ -1,0 +1,16 @@
+{
+  "name": "mr-monorepo",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "pnpm --recursive --parallel dev",
+    "build": "pnpm --recursive build",
+    "start": "pnpm --recursive start"
+  },
+  "devDependencies": {
+    "pnpm": "^8.0.0"
+  }
+}
